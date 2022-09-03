@@ -1,0 +1,29 @@
+<UserControl x:Class="UserControls.UserButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UserControls"
+             mc:Ignorable="d"
+			 d:Width="200"
+	d:DataContext="{d:DesignInstance local:UserButton, IsDesignTimeCreatable=True}">
+
+	<Button Padding="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+			Click="Button_Click">
+
+		<StackPanel Orientation="Horizontal" FlowDirection="{Binding FlowDirection}" >
+			<Grid>
+				<TextBlock FontFamily="Segoe Fluent Icons"
+						   VerticalAlignment="Center"
+						   Foreground="{Binding FillColor}"
+						   Text="{Binding FillImage}" />
+				<TextBlock FontFamily="Segoe Fluent Icons"
+						   VerticalAlignment="Center"
+						   Text="{Binding Image}" />
+			</Grid>
+			<TextBlock VerticalAlignment="Center"
+					   FontFamily="Segoe UI"
+					   Text="{Binding Title}"/>
+		</StackPanel>
+	</Button>
+</UserControl>

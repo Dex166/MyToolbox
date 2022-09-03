@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Authors>Bassi Lucio</Authors>
+    <Description>UserButton,
+	CancelTextBox,
+Coomin soon..</Description>
+    <IncrementVersionOnBuild>1.yy.MMdd.Hmm</IncrementVersionOnBuild>
+    <Version>1.22.903.1837</Version>
+  </PropertyGroup>
+
+</Project>
