@@ -24,5 +24,10 @@ namespace TestUserControls
         {
             InitializeComponent();
         }
+
+        private void UserButton_Click(object sender, EventArgs e)
+        {
+            testoprova.Text = "Cliccato!!";
+        }
     }
 }

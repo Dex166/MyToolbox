@@ -15,7 +15,7 @@ namespace UserControls
 
         public string? Title { get; set; }
 
-        public readonly DependencyProperty? TextProperty = DependencyProperty.Register("Text", typeof(string), typeof(CancelTextBox));
+        public static readonly DependencyProperty? TextProperty = DependencyProperty.Register("Text", typeof(string), typeof(CancelTextBox));
         public String? Text
         {
             get => (string?)GetValue(TextProperty);

@@ -6,16 +6,15 @@
 		xmlns:mio="clr-namespace:UserControls;assembly=UserControls"
         xmlns:local="clr-namespace:TestUserControls"
         mc:Ignorable="d"
-        Title="Test UserControls" Height="450" Width="800" Background="DimGray">
+        Title="Test UserControls" Height="450" Width="800" Background="DimGray" FontSize="15">
     <StackPanel>
 		<Border BorderBrush="Yellow" BorderThickness="1" Margin=" 20">
 			<mio:CancelTextBox Title="provami" Name="Canceltext"/>
 		</Border>
-		<TextBox Text="{Binding ElementName=Canceltext, Path=Text}" Margin="20
-				 " />
-		<Border BorderBrush="Yellow" BorderThickness="1" Margin=" 20">
-			<!--<mio:UserButton Title="Provami" Image="" />-->
+		<TextBox Text="{Binding ElementName=Canceltext, Path=Text}" Margin="20"  Name="testoprova"/>
+		<Border BorderBrush="Yellow" BorderThickness="1" Margin=" 20" Width="150">
+			<mio:UserButton Title="Provami" Icon="" Click="UserButton_Click" />
 		</Border>
-		<mio:UserButton Title="Fill" Image="" FillImage="" FillColor="Aqua"/>
+		<mio:UserButton Title="Aggiorna" Image="/aggiorna.png" Width="150" FlowDirection="RightToLeft"/>
 	</StackPanel>
 </Window>

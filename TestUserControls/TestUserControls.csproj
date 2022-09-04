@@ -8,7 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="aggiorna.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\UserControls\UserControls.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="aggiorna.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

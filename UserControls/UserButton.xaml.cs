@@ -10,18 +10,18 @@ namespace UserControls
         public UserButton()
         {
             InitializeComponent();
-            Title = "Prova";
-            Image = "";
             DataContext =this;
         }
 
         public string? Title { get; set; }
-        
+
         public string? Image { get; set; }
 
-        public string? FillImage { get; set; }
+        public string? Icon { get; set; }
 
-        public readonly DependencyProperty? FillColorProperty = DependencyProperty.Register("FillColor", typeof( Brush), typeof(UserButton));
+        public string? FillIcon { get; set; }
+
+        public static readonly DependencyProperty? FillColorProperty = DependencyProperty.Register("FillColor", typeof( Brush), typeof(UserButton));
         public Brush? FillColor
         {
             get => (Brush?)GetValue(FillColorProperty); 
