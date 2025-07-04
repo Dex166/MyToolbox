@@ -3,18 +3,28 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-		xmlns:mio="clr-namespace:UserControls;assembly=UserControls"
-        xmlns:local="clr-namespace:TestUserControls"
-        mc:Ignorable="d"
-        Title="Test UserControls" Height="450" Width="800" Background="DimGray" FontSize="15">
+		xmlns:mio="clr-namespace:UserControls;assembly=UserControls" xmlns:testusercontrols="clr-namespace:TestUserControls" d:DataContext="{d:DesignInstance Type=testusercontrols:MainWindowVM}"
+		xmlns:BL="clr-namespace:BL.Controls;assembly=BL.Controls"
+		mc:Ignorable="d"
+        Title="Test UserControls"
+		Height="450" Width="800" Background="DimGray" FontSize="15" >
+
     <StackPanel>
-		<Border BorderBrush="Yellow" BorderThickness="1" Margin=" 20">
-			<mio:CancelTextBox Title="provami" Name="Canceltext"/>
-		</Border>
-		<TextBox Text="{Binding ElementName=Canceltext, Path=Text}" Margin="20"  Name="testoprova"/>
-		<Border BorderBrush="Yellow" BorderThickness="1" Margin=" 20" Width="150">
-			<mio:UserButton Title="Provami" Icon="" Click="UserButton_Click" />
-		</Border>
-		<mio:UserButton Title="Aggiorna" Image="/aggiorna.png" Width="150" FlowDirection="RightToLeft"/>
+		<mio:CancelTextBox Title="provami" Text="{Binding Cerca, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="20"/>
+		<BL:CancelTextBox Label="BL.CancelTextBox" Text="{Binding Cerca, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="20"/>
+
+		<TextBlock Text="{Binding Cerca}" Margin="20" Background="White" Name="testo"/>
+
+
+		<mio:UserButton Title="Command" Icon="" IconColor="Red" FillIcon="" FillIconColor="CadetBlue"
+						CommandParameter="{Binding ElementName=testo, Path=Text}"
+						Command="{Binding UserButtonClickCommand}" Width="150"/>
+
+		<mio:UserButton Title="Input" Icon="" Width="150" FlowDirection="RightToLeft" Foreground="Blue"
+						Command="{Binding InputCommand}"/>
+		<BL:IconButton Title="BL.IconButton" Icon="" Command="{ Binding BLInputCommand}"/>
+		<BL:IconButton Title="Aggiungi" Icon="" IsEnabled="False" Height="65"/>
+		<BL:IconButton Title="Aggiungi" Icon="" IsEnabled="False" Height="100"/>
+
 	</StackPanel>
 </Window>

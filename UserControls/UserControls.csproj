@@ -1,12 +1,35 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net9.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <Authors>Bassi Lucio</Authors>
-    <Description>UserButton, CancelTextBox, Coomin soon..</Description>
-    <Version>1.0.0</Version>
+    <Description>UserButton, CancelTextBox, InputBox</Description>
+    <Version>2.3.2</Version>
+    <PackageOutputPath>C:\Users\dex16\OneDrive\Programmazione\MyToolbox\Librerie Pubblicate\</PackageOutputPath>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <AssemblyVersion>25.7.4.1251</AssemblyVersion>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <ShouldCreateLogs>True</ShouldCreateLogs>
+    <AdvancedSettingsExpanded>False</AdvancedSettingsExpanded>
+    <UpdateAssemblyVersion>False</UpdateAssemblyVersion>
+    <UpdateAssemblyFileVersion>False</UpdateAssemblyFileVersion>
+    <UpdateAssemblyInfoVersion>False</UpdateAssemblyInfoVersion>
+    <AssemblyVersionSettings>IncrementOnDemand.None.None.None</AssemblyVersionSettings>
+    <UpdatePackageVersion>False</UpdatePackageVersion>
+    <AssemblyInfoVersionType>SettingsVersion</AssemblyInfoVersionType>
+    <InheritWinAppVersionFrom>None</InheritWinAppVersionFrom>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Image\InputBox.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Image\inputbox.ico" />
+  </ItemGroup>
 
 </Project>

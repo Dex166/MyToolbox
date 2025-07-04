@@ -1,22 +1,22 @@
-﻿using System;
+﻿//using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 
 namespace UserControls
 {
-    public partial class CancelTextBox : UserControl
+   public partial class CancelTextBox : UserControl
     {
-        public CancelTextBox()
-        {
-            InitializeComponent();
-            DataContext = this;
-        }
+      public CancelTextBox()
+      {
+         InitializeComponent();
+         //DataContext = this;
+      }
 
-        public string? Title { get; set; }
+      public string? Title { get; set; }
 
         public static readonly DependencyProperty? TextProperty = DependencyProperty.Register("Text", typeof(string), typeof(CancelTextBox));
-        public String? Text
+        public string? Text
         {
             get => (string?)GetValue(TextProperty);
             set => SetValue(TextProperty, value);

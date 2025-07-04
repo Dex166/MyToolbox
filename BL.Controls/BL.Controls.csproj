@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<Authors>Bassi Lucio</Authors>
+	<Description>IconButton, CancelTextBox, InpuBox. richiede Segoe Fluent Icons.ttf</Description>
+	<Version>2.5.0</Version>
+	<PackageOutputPath>C:\Users\dex16\OneDrive\Programmazione\MyToolbox\Librerie Pubblicate\</PackageOutputPath>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<AssemblyVersion>25.7.4.1431</AssemblyVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="InputBox\inputbox.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="InputBox\InputBoxWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
