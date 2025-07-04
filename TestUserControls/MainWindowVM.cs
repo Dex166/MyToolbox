@@ -1,7 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.Windows;
-using UserControls;
+using BL.Controls;
 
 namespace TestUserControls
 {
@@ -9,18 +9,6 @@ namespace TestUserControls
 	{
 		
 		[ObservableProperty] string cerca;
-
-		[RelayCommand]
-		void UserButtonClick(object o)
-		{
-			MessageBox.Show($"Command eseguito!{o.ToString()}");
-		}
-
-        [RelayCommand]
-        void Input(object o)
-        {
-            Cerca = InputBox.ShowDialog("domandami qualcosa");
-        }
 
         [RelayCommand]
         void BLInput(object o)

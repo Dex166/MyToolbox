@@ -10,7 +10,7 @@
 	<Version>2.5.0</Version>
 	<PackageOutputPath>C:\Users\dex16\OneDrive\Programmazione\MyToolbox\Librerie Pubblicate\</PackageOutputPath>
 	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	<AssemblyVersion>25.7.4.1431</AssemblyVersion>
+	<AssemblyVersion>25.7.4.1514</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>

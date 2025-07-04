@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net9.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
-    <AssemblyVersion>25.7.4.1430</AssemblyVersion>
+    <AssemblyVersion>25.7.4.1514</AssemblyVersion>
     <FileVersion>2.0.0.0</FileVersion>
   </PropertyGroup>
 
@@ -18,7 +18,6 @@
 
   <ItemGroup>
 	  <ProjectReference Include="..\BL.Controls\BL.Controls.csproj" />
-	  <ProjectReference Include="..\UserControls\UserControls.csproj" />
   </ItemGroup>
 
   <ItemGroup>
